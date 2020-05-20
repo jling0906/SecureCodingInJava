@@ -32,7 +32,7 @@ Consequence: Must manage interactions between components with care:
     - Sanitize outputs
         - Goal: prevent information and capability leaks
     - Address rules for different code compoents to access system resources 
-![](/images/distrustfulDecomposiotion.png)
+![](/SecureCodingInJava/images/distrustfulDecomposiotion.png)
 #### Key idea 2: Privilege Separation
 To limit impact of errors and of sucessful attacks
 - During the design, decompose the system into seperate components
