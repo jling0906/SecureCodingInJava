@@ -60,7 +60,7 @@ During the design of application, remember to define trust boundaries, do distru
 -  The previous guidline result in the fact that, you will find similar structure of trust domain map as the archhitecture diagram.
 -  Operations limited to users with particular trust levels (or privileges) may help you find code that should be in separate trust domains
 - If you feel you cannot trust something as much as your own program, that means new trust boundaries. Here are possible clues:
-    - file system
+    - File system
     - System operations and administrators
     - Various kinds of users, management, etc
     - Input data from various source

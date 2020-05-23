@@ -5,5 +5,4 @@
 layout: home
 ---
 
-#display first
 
