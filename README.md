@@ -1,2 +1,2 @@
 # SecureCodingInJava
-This is for my blog of what I have learned for Secure coding in Java
+This is for the blog of what I have learned on Secure coding in Java
