@@ -16,7 +16,7 @@ This path is equivalent to
 There are unlimited number of path strings pointing to the same directory/file.
 
 ### Canonicalization.
-Canonicalization is the `lossless` reductiob of input data to its `simpliest` or `standard` equivalent form, which would 
+Canonicalization is the `lossless` reduction of input data to its `simpliest` or `standard` equivalent form, which would 
 - help simplify the validation process including the security checks.
 - Avoid `../` from attacker to access higher level directory
 
