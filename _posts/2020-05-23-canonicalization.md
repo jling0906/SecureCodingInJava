@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Canonicalization"
+title:  "Before validation - step 2: Canonicalization"
 date:   2020-05-23 16:14:04 -0700
 categories: jekyll update
 ---

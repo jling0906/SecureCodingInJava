@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Sanitization"
+title:  "Before validation - step 3: sanitization"
 date:   2020-05-28 23:14:50 -0700
 categories: jekyll update
 ---
