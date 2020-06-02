@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Before validation - step 1: normalization"
+title:  "Normalization"
 date:   2020-05-19 17:12:04 -0700
 categories: jekyll update
 ---
