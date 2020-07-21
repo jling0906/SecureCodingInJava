@@ -16,7 +16,7 @@ This path is equivalent to
 There are unlimited number of path strings pointing to the same directory/file.
 
 ### Canonicalization.
-Canonicalization is the `lossless` reduction of input data to its `simpliest` or `standard` equivalent form, which would 
+Canonicalization is the `lossless` reduction of input data to its `simplest` or `standard` equivalent form, which would 
 - help simplify the validation process including the security checks.
 - Avoid `../` from attacker to access higher level directory
 
@@ -33,7 +33,7 @@ public static void main(String[] args) {
 }
 ```
 f.getAbsolutePath() returns an absolute path string, however, not a simplified one.
-Instead of using getAbsolutePath(), Java.io.File comes with a mehthod `getCanonicalPath()`.
+Instead of using getAbsolutePath(), Java.io.File comes with a method `getCanonicalPath()`.
 it resolves all aliases, shortcuts, and symbolic links consistently across all platforms. Special file names such as `..` are also removed so that the input is reduced to a canonicalized form before validation is carried out. An attacker cannot use `../` sequences to break out of the specified directory when the validate() method is present.
 
 #### Compliant Solution

@@ -4,7 +4,7 @@ title:  "Code Injections"
 date:   2020-06-27 22:42:04 -0700
 categories: jekyll update
 ---
-The vulnerability of code injection happens when there is dynamically constructed code such as JavaScript code in Java. There is a javax.script package enables Java executing JavaScript code. When those js code is constructed by untrusted input through trused boundary, there could be an injection.
+The vulnerability of code injection happens when there is dynamically constructed code such as JavaScript code in Java. There is a javax.script package enables Java executing JavaScript code. When those js code is constructed by untrusted input through trusted boundary, there could be an injection.
 ```
 private static void evalScript( String firstName) throws ScriptException{
     ScriptEngineManager manager = new ScriptEngineManager();
@@ -37,7 +37,8 @@ To defense against the code injection, as well as other type of injections, we s
         engine.eval("print('"+firstName + "')");
     }
 ```
-Moreover, if some special characters have to be permitted in the input, we must normalize the input before doing sanitization. See [normalization](http://127.0.0.1:4000/SecureCodingInJava/jekyll/update/2020/05/19/normalization.html).
+Moreover, if some special characters have to be permitted in the input, we must normalize the input before doing sanitization. See [n
+ormalization](https://jling0906.github.io/SecureCodingInJava/jekyll/update/2020/05/20/normalization.html).
 
 ### Conclusion:
 - We must sanitize the untrusted input for dynamically constructed code.

@@ -4,13 +4,13 @@ title:  "Validation"
 date:   2020-06-01 10:45:50 -0700
 categories: jekyll update
 ---
-After we complete **nomalization**, **canonicalization** and **sanitization**, it is the right time to do validation on the data.
+After we complete **normalization**, **canonicalization** and **sanitization**, it is the right time to do validation on the data.
 
 #### **What is validation?**
 The process of checking data to ensure it is landing in the intended domain of the receiver.
 The domain depends the requirement of receiver, such as
-- Check if the data fall in particular numberic range
-- Unix `sudo` commands requires authentication, unless authentication was applied 30 seoconds ago.
+- Check if the data fall in particular numeric range
+- Unix `sudo` commands requires authentication, unless authentication was applied 30 seconds ago.
 - System invariant checking: only files that are open can be read
 
 #### **Where should validation occur?**
@@ -20,7 +20,7 @@ The domain depends the requirement of receiver, such as
     - May rely on some malicious callers to perform the validation
 
 - **Callee validation**: the data sender implements the validation
-    - Valication code can be encapsulated in a single location, which reduces the code size and the likelihood of incorrect validation
+    - Validation code can be encapsulated in a single location, which reduces the code size and the likelihood of incorrect validation
     - It is hard to forsee all the needs of callee, which may still need to do extra validation
 - Both
 - No validation
@@ -40,7 +40,7 @@ The domain depends the requirement of receiver, such as
 private Object myState = null;
 
 void setState(Object state) {
-  myState = state;      // problem: No validatio at all, state could be null
+  myState = state;      // problem: No validation at all, state could be null
 }
 
 void useState() {

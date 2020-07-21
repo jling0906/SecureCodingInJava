@@ -4,10 +4,10 @@ title:  "Normalization"
 date:   2020-05-19 17:12:04 -0700
 categories: jekyll update
 ---
-When data crosses the trust boundaries, we must make sure all data is non-malicious and appropriate. For input, limit the possibilities of attacks; for output, avoid leaking any sensitive informatioon. How to achieve that? Validate the data. 
+When data crosses the trust boundaries, we must make sure all data is non-malicious and appropriate. For input, limit the possibilities of attacks; for output, avoid leaking any sensitive information. How to achieve that? Validate the data. 
 
 #### Data validation
-One common attack on web application is XSS. Part of the stratege to avoid it is to forbid the "\<script\>" tag in the input. Here is an example of how to do validation. 
+One common attack on web application is XSS. Part of the strategy to avoid it is to forbid the "\<script\>" tag in the input. Here is an example of how to do validation. 
 ```
 Pattern pattern = Pattern.compile("[<>]");
 Matcher matcher = pattern.matcher(input);
@@ -33,14 +33,14 @@ Java 8       |  March 2014	      |   Unicode 6.2
 Java SE 7    |  July 28, 2011     |   Unicode 6.0
 Java SE 6    |  December 11, 2006 |   Unicode 4.0
 
-"\uFE64" repensents "<", "\uFE65" represents ">".
+"\uFE64" represents "<", "\uFE65" represents ">".
 
 In this case, after validation, the input may still contain \<script\> tags.
 Here is one Java secure coding rule for string validation:
 ```
 IDS01-J. Normalize strings before validating them.
 ```
-Below is the Java Normalizer class, where there are four major nomalization forms, NFC, NFD, NFKC and NFKD.
+Below is the Java Normalizer class, where there are four major normalization forms, NFC, NFD, NFKC and NFKD.
 
 ```
 public final class Normalizer {

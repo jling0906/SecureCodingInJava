@@ -9,7 +9,7 @@ This process ensures data conforms to the requirements of the subsystem to which
 - Should be applied to both input and output
 - Contains:
     - Ensuring data without sensitive information, for example, user privacy related information
-    - Elminating volnerabilies from unwanted characters, by removing, replacing, encoding or escaping those characters
+    - Eliminating vulnerabilities from unwanted characters, by removing, replacing, encoding or escaping those characters
     
 #### Regular expressions are widely used to match the string of text. Java comes with java.util.regex package.
 
@@ -36,7 +36,7 @@ Insecure solution:
 ```
 (.*? +public\[\d+\] +.*<SEARCHTEXT>.*)
 ```
-The problem lies in the **\<SEARCHTEXT\>**, attcker can put a **regex injection** with the following text:
+The problem lies in the **\<SEARCHTEXT\>**, attacker can put a **regex injection** with the following text:
 ```
 .*)|(.*
 ```
